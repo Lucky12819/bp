@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flip layout</title>
+	<style type="text/css">
+		*{
+			
+		}
+
+		body{
+			margin: 10px;
+			margin-bottom: 70px;
+		}
+		.latestBlog{
+			display: flex;
+
+			position: relative;
+			width: 100%;
+			height: 400px;
+		}
+		.latestBlogImg{
+			position: relative;
+			width: 80%;
+			height: 400px;
+			left: 5%;
+			background-image: url("../img/quantumProg.jpg");
+			background-size:100% 350px;
+			border-radius: 25px;
+		}
+		.latestBlogHeading{
+			width: 100%;
+			height: 60px;
+			position: absolute;
+			top:280px;	
+			color: white;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			text-align: center;
+		}
+		.latestBlogHeading p{
+			width: 100%;
+			font-size: 50px;
+			text-shadow: 1px 10px 6px #000000;
+			text-align:center;
+
+		}
+		.row{
+			display: flex;
+			position: relative;
+			backface-visibility: hidden;
+			top: 20px;
+		}
+		.card{
+			height: 300px;
+			position: relative;
+			display: inline-block;
+			width: 33%;
+			border: 0px;
+			margin: 1px;
+			transition: all 0.2s .2s ease-out;
+			backface-visibility: hidden;
+		}
+		.cardWrapper{
+			position: relative;
+
+			height: 100%;
+
+			width: 220px;
+			margin: 0 auto;
+			transform: translateX(0);
+			background-color: rgba(00,175,236,.8) ;
+			transform-origin: left;
+			transition: all .2s .2s ease-out;
+			perspective: 2000px;
+			backface-visibility: hidden;
+			box-shadow: 0 4px 16px rgba(0,176,240,.5);
+		}
+		.cover{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transform-origin: left;
+			background-color: rgba(0,176,240,.5);
+			transition: all .3s ease-out;	
+			perspective: 2000px;
+
+		}
+		.blogHeading{
+			position: relative;
+			
+			height: 80px;
+			width: 100%;
+			backface-visibility: hidden;
+		}
+		.blogImg{
+			position: relative;
+			top:20px;
+			width: 90%;
+			margin: auto;
+			height: 150px;
+			background: url("img/quantumProg.jpg") no-repeat;
+			background-size: 100% 100%;
+			border-radius: 35px;
+
+			backface-visibility: hidden;
+		}
+		.blogAuthor{
+			position: absolute;
+		}
+		figure{
+			margin: 0px;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		figure.front{
+			background: rgba(214,245,255,1);
+			backface-visibility: hidden;
+			border : 1px rgba(0,176,240,.5)
+		}		
+		figure.back{
+			background: rgba(214,245,255,1);
+			transform: rotateY(-180deg);
+			backface-visibility: hidden;
+		}
+		p{
+			position: absolute;
+			font-size: 18px;
+			margin: 0px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.summery{
+			position: absolute;
+			font-weight: 9;
+			font-size: 20px;
+			line-height: 30px;
+			color: white;
+			padding-right: 10px;
+			padding-left: 20px;
+		}
+		button{
+			position: absolute;
+			top: 90%;
+			left: 50%;
+		}
+	</style>
+</head>
+<body>
+<div class="latestBlog">
+	<div class="latestBlogImg"></div>
+	<div class="latestBlogHeading"><p>The 4 types of Engineers! Which one are you?</p></div>
+</div>
+<div class="row">
+	<div class="card" id="a">
+		<div class="cardWrapper">
+			<p class="summery">
+				We all know that an engineer has been, and is, a maker of history. But, we also know that “engineering” is damn hard work.Engineer the on e hgkog kokro koger o okfe ktow joe.
+			</p>
+			<button>READ MORE</button>
+			<div class="cover">
+				<figure class="front">
+					<div class="blogHeading">
+						<p>
+							The 4 types of Engineers! Which one are you?
+						</p>
+					</div>
+					<div class="blogImg"></div>
+				</figure>
+				<figure class="back">
+					<div class="blogAuthor">
+						<p>
+							by SOULVOGUE
+						</p>
+					</div>
+				</figure>
+			</div>
+
+		</div>
+	</div>
+		<div class="card" id="b">
+		<div class="cardWrapper">
+			<p class="summery">
+				We all know that an engineer has been, and is, a maker of history. But, we also know that “engineering” is damn hard work.Engineer the on e hgkog kokro koger o okfe ktow joe.
+			</p>
+			<button>READ MORE</button>
+			<div class="cover">
+				<figure class="front">
+					<div class="blogHeading">
+						<p>
+							The 4 types of Engineers! Which one are you?
+						</p>
+					</div>
+					<div class="blogImg"></div>
+				</figure>
+				<figure class="back">
+					<div class="blogAuthor">
+						<p>
+							by SOULVOGUE
+						</p>
+					</div>
+				</figure>
+			</div>
+		</div>
+	</div>
+		<div class="card" id="c">
+		<div class="cardWrapper">
+			<p class="summery">
+				We all know that an engineer has been, and is, a maker of history. But, we also know that “engineering” is damn hard work.Engineer the on e hgkog kokro koger o okfe ktow joe.
+			</p>
+			<button>READ MORE</button>
+			<div class="cover">
+				<figure class="front">
+					<div class="blogHeading">
+						<p>
+							The 4 types of Engineers! Which one are you?
+						</p>
+					</div>
+					<div class="blogImg"></div>					
+				</figure>
+				<figure class="back">
+					<div class="blogAuthor">
+						<p>
+							by SOULVOGUE
+						</p>
+					</div>
+				</figure>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		var areaManagerA =document.getElementById('a');
+		var areaManagerB =document.getElementById('b');
+		var areaManagerC =document.getElementById('c');
+		var cardA = areaManagerA.querySelector('.cardWrapper');
+		var cardB = areaManagerB.querySelector('.cardWrapper');
+		var cardC = areaManagerC.querySelector('.cardWrapper');
+		var coverA = cardA.querySelector('.cover');
+		var coverB = cardB.querySelector('.cover');		
+		var coverC = cardC.querySelector('.cover');				
+		cardA.addEventListener("mouseenter",openA);
+		cardA.addEventListener("mouseleave",closeA);
+		cardB.addEventListener("mouseenter",openB);
+		cardB.addEventListener("mouseleave",closeB);
+		cardC.addEventListener("mouseenter",openC);
+		cardC.addEventListener("mouseleave",closeC);
+		function openA(e){
+			coverA.style.transform = "rotateY(-140deg)"," translateX(90px)";
+			areaManagerA.style.width = "50%";
+			areaManagerB.style.width = "25%";
+			areaManagerC.style.width = "25%";
+			cardA.style.transform = 'translateX(90px)';
+
+		}
+		function closeA(e){
+			coverA.style.transform = "rotateY(0deg)"," translateX(0px)";
+			cardA.style.transform = 'translateX(0px)';
+			//cardA.style.removeProperty('float');
+			areaManagerA.style.width = "33%";
+			areaManagerB.style.width = "33%";
+			areaManagerC.style.width = "33%";		
+		}
+		function openB(e){
+			areaManagerA.style.width = "25%";
+			areaManagerB.style.width = "50%";
+			areaManagerC.style.width = "25%";
+			coverB.style.transform = "rotateY(-140deg)";
+			cardB.style.transform = 'translateX(90px)';
+		}
+		function closeB(e){
+			areaManagerA.style.width = "33%";
+			areaManagerB.style.width = "33%";
+			areaManagerC.style.width = "33%";
+			coverB.style.transform = "rotateY(0deg)";
+			cardB.style.transform = 'translateX(0px)';
+		}
+		function openC(e){
+			areaManagerA.style.width = "25%";
+			areaManagerB.style.width = "25%";
+			areaManagerC.style.width = "50%";
+			coverC.style.transform = "rotateY(-140deg)";
+			cardC.style.transform = 'translateX(90px)';
+		}		
+		function closeC(e){
+			coverC.style.transform = "rotateY(0deg)";
+			cardC.style.transform = 'translateX(0px)';
+			areaManagerA.style.width = "33%";
+			areaManagerB.style.width = "33%";
+			areaManagerC.style.width = "33%";
+		}
+	</script>
+</body>
+</html>
